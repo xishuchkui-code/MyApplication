@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <Button
+            android:id="@+id/btn_native_text"
+            android:text="原生: 请求网页 (HttpURLConnection)"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <Button android:id="@+id/btn_native_image"
+            android:text="原生: 请求图片 (HttpURLConnection)"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <View android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#CCC"
+            android:layout_margin="10dp"/>
+
+        <Button
+            android:id="@+id/btn_okhttp_text"
+            android:text="第三方: 请求网页 (OkHttp)"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/btn_glide_image"
+            android:text="第三方: 请求图片 (Glide)"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="结果显示区" />
+
+        <ImageView
+            android:id="@+id/iv_result"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:background="#EEE" />
+    </LinearLayout>
+</ScrollView>
